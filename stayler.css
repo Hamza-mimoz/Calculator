@@ -1,0 +1,94 @@
+body{
+    margin-left: 150px;
+}
+
+#thePage{
+    background-image: url("image.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    width: 1000px;
+    height: 700px;
+    padding-top: 100px;
+}
+
+#affichage{
+    width: 350px;
+    height: 80px;
+    background-color: rgb(53, 53, 53);
+    margin-left: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#Calculator{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 350px;
+    background-color: black;
+    margin-left: 350px;
+    
+}
+
+
+button{
+    width: 65px;
+    height: 65px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(53, 53, 53);
+    border-radius: 50%;
+    border-style: double;
+}
+
+.Operation{
+    margin-right: 30px;
+    background-color: orange;
+    
+}
+
+
+button:hover{
+    background-color: rgb(99, 99, 99);
+}
+
+button:active{
+    color:rgb(99, 99, 99) ;
+    background-color: white;
+}
+
+button.Operation:hover{
+    background-color: rgb(255, 197, 88);
+}
+button.Operation:active{
+    color: rgb(255, 197, 88);
+    background-color:white ;
+}
+
+#bottom{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 70px;
+    background-color: black;
+    margin-left: 350px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#display{
+    color: white;
+    padding: 5px;
+    padding-bottom: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
+#total{
+    color: white;
+    padding-top: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+}
