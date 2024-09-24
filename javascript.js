@@ -1,10 +1,17 @@
-let Cbutton = document.getElementById("C")
-Cbutton.addEventListener("click",function (){   
-location.reload();
-});
 let total = 0;
 let arr= [];
 
+
+let Cbutton = document.getElementById("C")
+Cbutton.addEventListener("click",function (){   
+   total = 0;
+   arr= [];
+   document.getElementById("display").innerHTML= 0
+   document.getElementById("total").innerHTML= 0
+
+});
+
+let deletbutton = document.getElementById("delete");
 let buttons = document.querySelectorAll(".buttonss")
 buttons.forEach( (button)=>{
 button.addEventListener("click",function (e){
@@ -17,6 +24,14 @@ document.getElementById("display").innerHTML= affi
 console.log(affi)
 });
 });
+deletbutton.addEventListener("click",function(){
+  arr.pop();
+  let affi = arrayToString(arr)
+  document.getElementById("display").innerHTML= affi
+  
+  })
+
+
 
 
 let equal = document.getElementById("=");
