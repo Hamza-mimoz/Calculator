@@ -20,8 +20,9 @@ let elemt=terget.id
 arr.push(elemt);
 //let  num = arrayToString(arr)  
 let affi = arrayToString(arr)
-document.getElementById("display").innerHTML= affi
 console.log(affi)
+document.getElementById("display").innerHTML= affi
+
 });
 });
 deletbutton.addEventListener("click",function(){
@@ -39,11 +40,20 @@ equal.addEventListener("mousedown", function(){
    let str = /[+*-/]/;
    let  num = arrayToString(arr)
    let indexOperat =num.search(str)
+   let operator = num.at(indexOperat);
+   if(operator=== "." ){
+    let newnum = num.slice((indexOperat+1))
+    newindex=newnum.search(str)
+    operator=newnum.at(newindex)
+    indexOperat=indexOperat+newindex+1
+    
+   }
    //console.log(indexOperat)
    let A = num.slice(0, (indexOperat));
+   
    let B = num.slice((indexOperat+1) );
   
-   let operator = num.at(indexOperat);
+   
    let Avaleur= Number(A)
    let Bvaleur = Number(B)
    let result = calculate(Avaleur,operator,Bvaleur,total);
